@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashy Photography | Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Flashy Photography</a>
+      <nav class="nav">
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav container">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1>Portfolio</h1>
+      <p class="muted">Placeholder gallery tiles (swap with real images later).</p>
+    </section>
+
+    <section class="gallery">
+      <div class="tile"><div class="ph">Portrait</div></div>
+      <div class="tile"><div class="ph">Event</div></div>
+      <div class="tile"><div class="ph">Brand</div></div>
+      <div class="tile"><div class="ph">Outdoor</div></div>
+      <div class="tile"><div class="ph">Studio</div></div>
+      <div class="tile"><div class="ph">Lifestyle</div></div>
+    </section>
+
+    <section class="card">
+      <h2>How to update images</h2>
+      <p class="muted">Replace the placeholders by adding images to <code>assets/images</code> and updating the HTML.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Flashy Photography</p>
+      <p class="muted">Portfolio page</p>
+    </div>
+  </footer>
+</body>
+</html>

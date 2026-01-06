@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashy Photography | Home</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Flashy Photography</a>
+      <nav class="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav container">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Clean, modern photography for real moments.</h1>
+        <p>Portraits • Events • Brand photos. Simple booking, quick turnaround, and a professional look.</p>
+        <div class="cta-row">
+          <a class="btn" href="booking.html">Request a Booking</a>
+          <a class="btn btn-outline" href="portfolio.html">View Portfolio</a>
+        </div>
+        <p class="small muted">Note: This is a student project demo site (IT299).</p>
+      </div>
+      <div class="hero-card">
+        <h2>Quick Info</h2>
+        <ul>
+          <li>Location: Charlotte, NC (travel available)</li>
+          <li>Turnaround: 5–7 business days</li>
+          <li>Delivery: Online gallery link</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid-3">
+      <article class="card">
+        <h3>Portrait Sessions</h3>
+        <p>Graduation, family, couples, and personal branding.</p>
+      </article>
+      <article class="card">
+        <h3>Event Coverage</h3>
+        <p>Parties, small weddings, ceremonies, and community events.</p>
+      </article>
+      <article class="card">
+        <h3>Business / Brand</h3>
+        <p>Headshots and content for small business marketing.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>What you’ll get</h2>
+      <ol>
+        <li>Submit a booking request</li>
+        <li>Receive confirmation + details</li>
+        <li>Session day</li>
+        <li>Delivery via online gallery link</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Flashy Photography</p>
+      <p class="muted">Built for coursework – IT299 Project Playbook</p>
+    </div>
+  </footer>
+</body>
+</html>

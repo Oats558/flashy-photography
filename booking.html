@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashy Photography | Booking</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Flashy Photography</a>
+      <nav class="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active" href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav container">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1>Booking Request</h1>
+      <p class="muted">This form saves requests locally (demo). For real use, connect to email or a database.</p>
+    </section>
+
+    <section class="card">
+      <form id="bookingForm">
+        <div class="grid-2">
+          <label>
+            Full Name
+            <input required name="name" type="text" placeholder="Marcus Oats" />
+          </label>
+          <label>
+            Email
+            <input required name="email" type="email" placeholder="you@email.com" />
+          </label>
+          <label>
+            Session Type
+            <select name="type" required>
+              <option value="">Select one</option>
+              <option>Portrait</option>
+              <option>Event</option>
+              <option>Business/Brand</option>
+            </select>
+          </label>
+          <label>
+            Preferred Date
+            <input required name="date" type="date" />
+          </label>
+        </div>
+
+        <label>
+          Notes
+          <textarea name="notes" rows="4" placeholder="Location, vibe, special requests..."></textarea>
+        </label>
+
+        <div class="cta-row">
+          <button class="btn" type="submit">Submit Request</button>
+          <button class="btn btn-outline" type="button" onclick="loadRequests()">View Saved Requests</button>
+        </div>
+
+        <div id="formMsg" class="small muted" aria-live="polite"></div>
+        <div id="requests" class="requests"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Flashy Photography</p>
+      <p class="muted">Booking page</p>
+    </div>
+  </footer>
+</body>
+</html>

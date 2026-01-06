@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashy Photography | Contact</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Flashy Photography</a>
+      <nav class="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav container">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1>Contact</h1>
+      <p class="muted">Simple contact details for the demo site.</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> photosbysol@example.com</p>
+        <p><strong>Phone:</strong> (555) 555-5555</p>
+        <p><strong>Hours:</strong> Mon–Sat, 10am–6pm</p>
+      </div>
+      <div class="card">
+        <h2>Message</h2>
+        <p class="muted">For a real site, connect this to email or a database. (Not required for this class.)</p>
+        <textarea rows="8" placeholder="Type your message..."></textarea>
+        <div class="cta-row">
+          <button class="btn" type="button" onclick="alert('Demo only')">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Flashy Photography</p>
+      <p class="muted">Contact page</p>
+    </div>
+  </footer>
+</body>
+</html>
